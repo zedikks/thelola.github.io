@@ -1,0 +1,209 @@
+<!--
+ thanks to OllieJW (https://olliejw.me)
+ License - https://lolashield.ru/
+-->
+
+<!DOCTYPE html>
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
+  <title>LolaShield</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="LolaShield">
+  <meta name="description" content="LolaShield - Бесплатный, приватный, ванильный сервер на 1.19.2!">
+  <meta name="keywords" content="lola, lolashield, майнкрафт, майнкрафт сервер, приватный майнкрафт сервер, pepeland, аллайланд, эллэйлэнд, еллейленд, сп4, майншилд, сервер как майншилд, jaer, jaer1337, sztorm, _sztorm">
+  <meta name="theme-color" content="#4bb4f1">
+
+  <!-- Edit this to change staff cards! -->
+  <script id="staff-template" type="text/template">
+    <div class="staff-card shrink">
+      <img src="https://mc-heads.net/avatar/{{ uuid }}">
+      <h3>{{ name }}</h3>
+      <h4>{{ rank }}</h4>
+    </div>
+  </script>
+
+  <script id="vote-template" type="text/template">
+    <div class="vote-card shrink shrink-dark">
+      <img src="{{ image }}">
+      <h3>{{ service }}</h3>
+      <h4><a href="{{ link }}" class="btn">Vote</a></h4>
+    </div>
+  </script>
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/fireflies.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+  
+  <script>tosAgreed = false</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template"></script>
+<div>
+  <header>
+    <div class="hero" id="hero">
+      <h1>Welcome to LolaShield!</h1>
+      <h3>Присоединяйся к 300+ участникам на сервере</h3> <font color="pink"><h3>LolaShield</h3><br>
+	  <div id="pinned">
+        <div class="pinned-card shrink shrink-pinned">
+          <i class="text"></i><strong>ИНФОРМАЦИЯ</strong>
+          <div><h2 class="main-article__headerx" style="margin-top: 15px; margin-bottom: 15px;">ТРЕТИЙ СЕЗОН СТАРТУЕТ ЧЕРЕЗ:
+<p id="demo" class="dxxx"></p><br></div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 30, 2022 22:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "3 SEASON!";
+    }
+}, 1000);</script></p>
+          <a class="button-85" role="button" href="https://discord.com/invite/D3umS5X3r3" style="text-decoration: none; margin-bottom: 15px;">НАЧАТЬ ИГРАТЬ</a>
+          <style type="text/css">
+          </style>
+        </div>
+      </div>
+  </div>
+        </div>
+      </div>
+	</div>
+  </header>
+
+  <section id="header" class="dark">
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="index.html">Домой</a></li>
+        <li><a href="download/mods.html">Моды</a></li>
+		<li><a href="download/texturepack.html">Ресурспак</a></li>
+        <li><a href="https://docs.google.com/document/d/1DCCllNc-Lsvz8-rF9J4Mgurz_UysR4FqJcx5BFmNfEg/edit?usp=sharing">Правила</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="light">
+    <p class="enlarge">
+      <strong>О Нас</strong>
+      Привет! мы приватный, ванильный сервер без плагинов и доната! На нашем сервере все игроки равны. Сейчас на сервере стартовал 2 сезон, ждем тебя!
+    </p>
+    <p class="enlarge">
+      <strong>История</strong>
+      LolaShield стартовал в августе 2022 года, но его идея пришла к нам еще в начале лета 2022. Сейчас мы активно продвигаем сервер.
+    </p>
+    <p class="enlarge">
+      <strong>Интересный факт</strong>
+      Наш сервер полностью бесплатный, нету даже незначительных привилегий.
+    </p>
+  </section>
+
+  <section class="dark">
+    <h1>Что делает наш сервер необычным?</h1>
+    <div class="feature right">
+      <img src="img/feature-1.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong>Первая особенность</strong><br>
+        На сервере майнкрафт больше 30 игроков, а в дискорде более 300 участников! У нас нет приватов, плагинов, и доната!
+      </p>
+    </div>
+    <hr>
+    <div class="feature left">
+      <img src="img/feature-2.jpg" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong>Вторая особенность</strong><br>
+        Наш сервер работает 24/7. А поддержка отвечает в течении нескольких часов. Для стримеров и ютуберов доступны различные возможности и подарки!
+      </p>
+    </div>
+    <hr>
+  </section>
+
+  <section class="light">
+    <h1>НАША КОМАНДА</h1>
+    <div id="staff" class="grid" style="margin-top: 5px; margin-bottom: 5px;"></div>
+  </section>
+
+
+
+  <section class="dark">
+    <h1>Новости</h1>
+    <div id="news">
+            <div class="news-card">
+        <strong>16.11.22 20:32</strong>
+        <p>Новый сайт</p>
+      </div>
+            <div class="news-card" style="margin-top: 25px;">
+        <strong>30.10.22 16:00</strong>
+        <p>Старт второго сезона через час</p>
+      </div>
+            <div class="news-card" style="margin-top: 25px;">
+        <strong>9.09.22 14:40</strong>
+        <p>Сервер успешно восстановлен</p>
+      </div>
+      <div class="news-card" style="margin-top: 25px;">
+        <strong>9.09.22 12:00</strong>
+        <p>На сервере произошел краш, восстанавливаем</p>
+      </div>
+      <div class="news-card" style="margin-top: 25px;">
+        <strong>30.08.22 17:32</strong>
+        <p>Открытие первого сезона через пол-часа</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="light">
+    <h1>КОНТАКТЫ</h1>
+    <div class="buttons">
+      <a href="https://youtube.com/zediban" class="btn">YouTube</a>
+      <a href="https://discord.com/invite/D3umS5X3r3" class="btn2">Discord</a>
+      <a href="https://vk.com/lolashield" class="btn">VKontakte</a>
+    </div>
+  </section>
+  <section class="dark">
+    <h1>Голосуйте за нас:</h1>
+    <div id="vote" class="grid"></div>
+  </section>
+
+  <footer>
+    <a href="https://codebase.com"></a>
+    <p class="xdsxx">LolaShield &copy; сайт разработан:   <a href="https://youtube.com/zediban" style="text-decoration: none; color: grey; margin-left: 5px;">youtube.com/zediban</a></p>
+  </footer>
+  </script>
+<div>
+</body>
